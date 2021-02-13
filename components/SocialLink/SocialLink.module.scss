@@ -1,0 +1,51 @@
+///// SocialIcons
+
+.socialIcon {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  filter: invert(18%) sepia(22%) saturate(0%) hue-rotate(207deg) brightness(109%) contrast(78%);
+}
+
+.facebook {
+
+  &:hover {
+    filter: invert(61%) sepia(100%) saturate(5752%) hue-rotate(202deg) brightness(98%) contrast(93%);
+  }
+}
+
+.twitter {
+
+  &:hover {
+    filter: invert(53%) sepia(30%) saturate(3947%) hue-rotate(176deg) brightness(100%) contrast(91%);
+  }
+}
+
+.telegram {
+
+  &:hover {
+    filter: invert(69%) sepia(53%) saturate(4828%) hue-rotate(169deg) brightness(94%) contrast(89%);
+  }
+}
+
+.github {
+
+  &:hover {
+    filter: invert(0%) sepia(7%) saturate(3162%) hue-rotate(336deg) brightness(95%) contrast(82%);
+  }
+}
+
+.gmail {
+
+  &:hover {
+    filter: invert(32%) sepia(60%) saturate(4377%) hue-rotate(346deg) brightness(104%) contrast(86%);
+  }
+}
+
+@media (max-width: 320px) {
+  .socialIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+  }
+}
