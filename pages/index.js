@@ -1,7 +1,6 @@
 import SocialLink from 'components/SocialLink/index';
-import { APP_DATE_START, APP_DESCRIPTION, APP_NAME } from 'config/constants';
+import appConfig from 'config/appConfig';
 import socialLinks from 'config/socialLinks';
-import { version } from 'package.json';
 import styles from 'styles/Home.module.scss';
 
 export default function Home() {
@@ -14,16 +13,24 @@ export default function Home() {
           alt="Logo"
         />
         <h1 className={styles.title}>
-          {APP_NAME}
+          {appConfig.name}
         </h1>
 
         <p className={styles.description}>
-          {APP_DESCRIPTION}
+          {appConfig.description}
+        </p>
+
+        <p className={styles.location}>
+          {appConfig.location}
         </p>
 
         <ul className={styles.links}>
           {
-            socialLinks.map((i) => <li key={Math.random()}><SocialLink type={i.type} link={i.link} /></li>)
+            socialLinks.map((i) => (
+              <li key={Math.random()}>
+                <SocialLink type={i.type} link={i.link} />
+              </li>
+            ))
           }
         </ul>
       </main>
@@ -32,7 +39,7 @@ export default function Home() {
         <div className={styles.footerCol}>
           &copy;
           {' '}
-          {APP_DATE_START}
+          {appConfig.since}
           &mdash;
           {new Date().getFullYear()}
         </div>
@@ -50,7 +57,7 @@ export default function Home() {
         <div className={styles.footerCol}>
           v.
           {' '}
-          {version}
+          {appConfig.version}
         </div>
       </footer>
     </div>
