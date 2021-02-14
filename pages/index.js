@@ -1,24 +1,19 @@
-import { version } from '../package.json';
+import SocialLink from '../components/SocialLink/index';
 import { APP_DATE_START, APP_DESCRIPTION, APP_NAME } from '../config/constants';
 import socialLinks from '../config/socialLinks';
-
-import SocialLink from '../components/SocialLink/index';
+import { version } from '../package.json';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
-  const handleAvatarClick = () => {
-    console.log('click');
-  };
   return (
     <div className={styles.container}>
-
       <main className={styles.main}>
         <img
           src="/images/avatar.png"
           className={styles.avatar}
           alt="Logo"
         />
-        <h1 className={styles.title} onClick={handleAvatarClick}>
+        <h1 className={styles.title}>
           {APP_NAME}
         </h1>
 
