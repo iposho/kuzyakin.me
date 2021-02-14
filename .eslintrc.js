@@ -45,5 +45,8 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], specialLink: ['hrefLeft', 'hrefRight'], aspects: ['invalidHref', 'preferButton'] }],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'import/first': 'error',
+    'import/newline-after-import': ['error', { count: 1 }],
+    'import/no-duplicates': 'error',
   },
 };
