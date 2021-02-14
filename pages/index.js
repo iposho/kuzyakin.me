@@ -1,8 +1,8 @@
-import SocialLink from '../components/SocialLink/index';
-import { APP_DATE_START, APP_DESCRIPTION, APP_NAME } from '../config/constants';
-import socialLinks from '../config/socialLinks';
-import { version } from '../package.json';
-import styles from '../styles/Home.module.scss';
+import SocialLink from 'components/SocialLink/index';
+import { APP_DATE_START, APP_DESCRIPTION, APP_NAME } from 'config/constants';
+import socialLinks from 'config/socialLinks';
+import { version } from 'package.json';
+import styles from 'styles/Home.module.scss';
 
 export default function Home() {
   return (

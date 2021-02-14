@@ -1,10 +1,9 @@
-import '../styles/globals.scss';
+import 'styles/globals.scss';
 
+import { APP_NAME } from 'config/constants';
 import Head from 'next/head';
+import { version } from 'package.json';
 import React from 'react';
-
-import { APP_NAME } from '../config/constants';
-import { version } from '../package.json';
 
 function MyApp({ Component, pageProps }) {
   if (process.env.NODE_ENV === 'development') {
