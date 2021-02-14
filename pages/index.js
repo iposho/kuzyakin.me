@@ -1,19 +1,29 @@
+import classnames from 'classnames';
 import SkillsList from 'components/SkillsList';
 import SocialLink from 'components/SocialLink/index';
 import appConfig from 'config/appConfig';
 import skills from 'config/skills';
 import socialLinks from 'config/socialLinks';
+import { useState } from 'react';
 import styles from 'styles/Home.module.scss';
 import { v4 as uuidv4 } from 'uuid';
 
 export default function Home() {
+  const [count, setCount] = useState(0);
+
+  const avatarStyles = classnames({
+    [styles.avatar]: true,
+    [styles.animateAvatar]: count >= 7,
+  });
+
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <img
           src="/images/avatar.png"
-          className={styles.avatar}
+          className={avatarStyles}
           alt="Logo"
+          onClick={() => setCount(0)}
         />
         <h1 className={styles.title}>
           {appConfig.name}
@@ -59,7 +69,7 @@ export default function Home() {
             <img src="/icons/vercel.svg" alt="Vercel Logo" className={styles.logo} />
           </a>
         </div>
-        <div className={styles.footerCol}>
+        <div className={styles.footerCol} onClick={() => setCount(count + 1)}>
           v.
           {' '}
           {appConfig.version}
