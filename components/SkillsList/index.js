@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuid } from 'uuid';
 
 import styles from './SkillsList.module.scss';
 
@@ -7,7 +7,7 @@ export default function SkillsList({ skills }) {
     <ul className={styles.skills}>
       {
         skills.map((i) => (
-          <li key={uuidv4()}>
+          <li key={uuid()}>
             {i.name}
           </li>
         ))
