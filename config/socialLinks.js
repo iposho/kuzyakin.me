@@ -8,16 +8,16 @@ const socialLinks = [
     type: 'twitter',
   },
   {
+    link: 'https://github.com/iposho',
+    type: 'github',
+  },
+  {
     link: 'https://t.me/mrPosho',
     type: 'telegram',
   },
   {
     link: 'mailto:pavel@kuzyakin.me',
     type: 'gmail',
-  },
-  {
-    link: 'https://github.com/iposho',
-    type: 'github',
   },
 ];
 

@@ -1,0 +1,28 @@
+.skills {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 65%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: #F0F1F2;
+    color: #666;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    max-width: 100%;
+  }
+}

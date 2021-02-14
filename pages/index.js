@@ -1,7 +1,10 @@
+import SkillsList from 'components/SkillsList';
 import SocialLink from 'components/SocialLink/index';
 import appConfig from 'config/appConfig';
+import skills from 'config/skills';
 import socialLinks from 'config/socialLinks';
 import styles from 'styles/Home.module.scss';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Home() {
   return (
@@ -24,10 +27,12 @@ export default function Home() {
           {appConfig.location}
         </p>
 
+        <SkillsList skills={skills} />
+
         <ul className={styles.links}>
           {
             socialLinks.map((i) => (
-              <li key={Math.random()}>
+              <li key={uuidv4()}>
                 <SocialLink type={i.type} link={i.link} />
               </li>
             ))

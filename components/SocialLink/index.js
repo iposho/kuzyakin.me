@@ -7,9 +7,14 @@ export default function SocialLink({ link, type }) {
     [styles.socialIcon]: true,
     [styles[type]]: true,
   });
+
   return (
     <a href={link}>
-      <img src={`/icons/${type}.svg`} className={imgClassName} alt={type} />
+      <img
+        src={`/icons/${type}.svg`}
+        className={imgClassName}
+        alt={`${type} icon`}
+      />
     </a>
   );
 }
