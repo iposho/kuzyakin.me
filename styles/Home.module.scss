@@ -35,6 +35,19 @@
   box-shadow: 1px 1px 15px -2px #444;
 }
 
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+.animateAvatar {
+  animation: spin 5s linear 0s infinite;
+}
+
 .title {
   margin: 0 0 .5rem 0;
   line-height: 1.15;

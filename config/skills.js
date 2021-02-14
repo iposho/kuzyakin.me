@@ -27,6 +27,9 @@ const skills = [
     name: 'SASS',
   },
   {
+    name: 'PostCSS',
+  },
+  {
     name: 'Git',
   },
   {
