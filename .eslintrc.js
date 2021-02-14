@@ -20,6 +20,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'simple-import-sort',
   ],
   rules: {
     'react/jsx-filename-extension': [0],
@@ -34,5 +35,8 @@ module.exports = {
     indent: ['error', 2],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     quotes: ['error', 'single'],
+    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], specialLink: ['hrefLeft', 'hrefRight'], aspects: ['invalidHref', 'preferButton'] }],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 };
