@@ -35,6 +35,14 @@
   }
 }
 
+.strava {
+  filter: none;
+
+  &:hover {
+    filter: invert(46%) sepia(84%) saturate(4768%) hue-rotate(4deg) brightness(100%) contrast(103%);
+  }
+}
+
 .gmail {
 
   &:hover {

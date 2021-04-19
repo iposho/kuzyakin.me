@@ -25,6 +25,15 @@
   li {
     padding: 0 1rem;
   }
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .avatar {

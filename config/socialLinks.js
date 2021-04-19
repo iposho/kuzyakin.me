@@ -12,6 +12,10 @@ const socialLinks = [
     type: 'github',
   },
   {
+    link: 'https://www.strava.com/athletes/26728076',
+    type: 'strava',
+  },
+  {
     link: 'https://t.me/mrPosho',
     type: 'telegram',
   },
